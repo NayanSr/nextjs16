@@ -22,7 +22,7 @@ const UserSchema: Schema<IUser> = new Schema(
 );
 
 const User: Model<IUser> =
-  mongoose.models.User || mongoose.model<IUser>("User", UserSchema, "LMS data");
+  mongoose.models.User || mongoose.model<IUser>("User", UserSchema);
 
 export default User;
 
